@@ -7,6 +7,11 @@ function romanNumber(input) {
     i = 5;
   }
 
+  if (input >= 10) {
+    roman = "X";
+    i = 10;
+  }
+
   for (; i < input; i++) {
     roman += "I";
   }
