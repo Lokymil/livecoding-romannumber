@@ -12,6 +12,7 @@ describe("romanNumber", () => {
     { input: 9, output: "IX" },
     { input: 10, output: "X" },
     { input: 15, output: "XV" },
+    { input: 20, output: "XX" },
   ])("should return $output when given $input", ({ input, output }) => {
     expect(romanNumber(input)).toBe(output);
   });
