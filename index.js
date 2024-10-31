@@ -1,17 +1,15 @@
 function romanNumber(input) {
-  if (input === 2) {
-    return "II";
-  }
-
-  if (input === 3) {
-    return "III";
-  }
+  let roman = "";
 
   if (input === 5) {
     return "V";
   }
 
-  return "I";
+  for (let i = 0; i < input; i++) {
+    roman += "I";
+  }
+
+  return roman;
 }
 
 module.exports = {
