@@ -1,15 +1,13 @@
 function romanNumber(input) {
   let roman = "";
+  let i = 0;
 
-  if (input === 5) {
-    return "V";
+  if (input >= 5) {
+    roman = "V";
+    i = 5;
   }
 
-  if (input === 6) {
-    return "VI";
-  }
-
-  for (let i = 0; i < input; i++) {
+  for (; i < input; i++) {
     roman += "I";
   }
 
